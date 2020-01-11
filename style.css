@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    text-align: center;
+    background-color: orange;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.first, .second, .third{
+    position: absolute;
+    display: none;
+}
+
+.hover{
+    position: relative;
+    display: inline-block;
+}
+
+ul li{
+    display: inline-block;
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: orange;
+    color: black;
+}
+
+li ul li {
+    width: 100px;
+}
+
+.hover:hover .first {
+    display: block;
+    padding-top: 5px;
+    background-color: orange;
+    margin-top: 5px;
+}
+
+.hover:hover .second{
+    display: block;
+    background-color: orange;
+    margin-top: 5px;
+}
+
+.hover1:hover .third{
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: -5px;
+    background-color: orange;
+}
+
+li:hover{
+    background: black;
+    color: orange;
+}
+
+.op, .ops{
+    border: 1px solid black;
+}
+
+.op{
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.ops{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    display: none;
+}
+
+.op:hover .ops{
+    display: inline-block;
+    right: -20%;
+    top: 60px;
+}
+
+.container{
+    padding-top: 1%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.test{
+    width: 30%;
+    height: 10px;
+    float: left;
+    border: 1px solid black;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
